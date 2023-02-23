@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="login100-form validate-form text-left" name="form_login" id="form_login" method='post' action="https://satitsap.edu.cmu.ac.th/recruit/pro_register/system/system_logins.php">
+
+        <div class=" m-b-30 m-t-30 row ">
+            <div class="col-sm-2 "></div>
+            <div class="col-sm-8 ">
+                <div class="wrap-input100 validate-input " data-validate="Enter username ">
+                    <input maxlength="13 " class="input100 " type="text " name="ReCode_User " id="ReCode_User " value=" " placeholder="เลขที่นั่งสอบ " style="width: 100%; text-align:left; " onKeyUp="if(this.value*1!=this.value) this.value='' ;
+        " title="เฉพาะตัวเลข ">
+                    <span class="focus-input100 " data-placeholder="&#xf201; "></span>
+                </div>
+                <div class="container-login100-form-btn ">
+                    <button type="submit " class="login100-form-btn ">Login</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+
+    <script>
+        $("#form_login").on("submit", function(e) {
+            if (document.getElementById("ReCode_User").value == "") {
+                swal('กรอกข้อมูลเพื่อตรวจสอบ', '"ช่อง Username"', 'info').then(function() {
+                    document.chk_data.ReCode_User.focus()
+                });
+                return false;
+            }
+
+            $('#form_login').attr('action', "../system/system_logins.php").submit();
+
+            // var data = new FormData($("#form_login")[0]);
+            // $.ajax({
+            //     url: '../system/system_logins.php',
+            //     data: data,
+            //     cache: false,
+            //     contentType: false,
+            //     processData: false,
+            //     type: 'POST',
+            //     success: function(data) {
+            //         var myObj = JSON.parse(data);
+            //         //console.log(data);
+
+            //         if (myObj.status == "success") {
+            //             swal({
+            //                 title: 'เข้าสู่ระบบสำเร็จ',
+            //                 text: '',
+            //                 type: 'success',
+            //                 showConfirmButton: false,
+            //                 timer: 2000
+            //             }).catch(swal.noop).then(function() {
+            //                 //window.top.location.href = '../system/system_chkNew.php',{'chk_control':'New_User'};
+            //                 $().redirect('../system/system_chkNew.php', {'chk_control':'New_User'});
+            //                 $('#form_login').attr('action', "./system/system_chkNew.php").submit();
+            //             }).catch(swal.noop);
+            //         } else {
+            //             swal({
+            //                 title: 'Login ใหม่อีกครั้ง',
+            //                 text: '',
+            //                 type: 'info',
+            //                 showConfirmButton: false,
+            //                 timer: 4000
+            //             }).catch(swal.noop).then(function() {
+            //                 window.top.location.href = 's_login.php';
+            //             }).catch(swal.noop);
+            //             return false;
+            //         }
+            //     }
+            // });
+            // e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
