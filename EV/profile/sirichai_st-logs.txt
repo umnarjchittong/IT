@@ -1,0 +1,42 @@
+{
+            "date": "2023/01/13",
+            "time": "13:14",
+            "location": "บ้าย",
+            "batt": "31",
+            "range": "4",
+            "odo": "4",
+            "energy": "standard",
+            "mode": "eco",
+            "used_percent": -31,
+            "used_kw": -18.7488,
+            "used_km": 4,
+            "used_100": -468.72
+        },
+        {
+            "date": "2023/01/14",
+            "time": "13:39",
+            "location": "เขาสมิง ",
+            "batt": "97",
+            "range": "46",
+            "odo": "727",
+            "energy": "height",
+            "mode": "eco",
+            "used_percent": -66,
+            "used_kw": -39.9168,
+            "used_km": 723,
+            "used_100": -5.5209958506224
+        },
+        {
+            "date": "2023/01/14",
+            "time": "21:07",
+            "location": "โว้ว ปากคลองบางกระดาน",
+            "batt": "98",
+            "range": "80",
+            "odo": "803",
+            "energy": "height",
+            "mode": "eco",
+            "used_percent": -1,
+            "used_kw": -0.6048,
+            "used_km": 76,
+            "used_100": -0.79578947368421
+        }

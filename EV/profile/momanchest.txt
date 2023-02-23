@@ -1,0 +1,1 @@
+{"car_model":"BYD ATTO 3","car_id":"3","car_color":"Boulder Grey","car_pic":"byd_atto_3_boulder_grey.png","batt_capacity":"60.48","range_nedc":"480","range_wltp":"420","range_eap":"375","car_engine":"150","car_horsep":"201","car_plug_kw":"80","car_plug":"AC Type 2 / DC CCS 2","range_est":"410","batt_using":"250","home_charger_p":"7.20378","home_charger_op":"3.82118"}

@@ -1,0 +1,28 @@
+{
+            "date": "2023/01/13",
+            "time": "13:00",
+            "location": "นนท์-หนองฉาฝ",
+            "batt": "100",
+            "range": "410",
+            "odo": "2538",
+            "energy": "standard",
+            "mode": "eco",
+            "used_percent": 0,
+            "used_kw": 0,
+            "used_km": 0,
+            "used_100": 0
+        },
+        {
+            "date": "2023/01/14",
+            "time": "10:14",
+            "location": "นครสวรรค์",
+            "batt": "50",
+            "range": "225",
+            "odo": "2763",
+            "energy": "height",
+            "mode": "eco",
+            "used_percent": 50,
+            "used_kw": 30.24,
+            "used_km": 225,
+            "used_100": 13.44
+        }

@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Home satun",
+        "link": "https://maps.app.goo.gl/SRTmbHmy4KywKkw16",
+        "location":{
+            "place_1":"บ้าน",
+            "place_2":"ปลายทาง"
+        }
+    }]

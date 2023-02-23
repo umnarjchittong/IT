@@ -1,0 +1,42 @@
+{
+            "date": "2023/01/14",
+            "time": "08:31",
+            "location": "Home",
+            "batt": "73",
+            "range": "352",
+            "odo": "591",
+            "energy": "standard",
+            "mode": "eco",
+            "used_percent": -73,
+            "used_kw": -44.1504,
+            "used_km": 591,
+            "used_100": -7.4704568527919
+        },
+        {
+            "date": "2023/01/14",
+            "time": "09:47",
+            "location": "ชาจ pea",
+            "batt": "100",
+            "range": "480",
+            "odo": "600",
+            "energy": "standard",
+            "mode": "eco",
+            "used_percent": 0,
+            "used_kw": 0,
+            "used_km": 0,
+            "used_100": 0
+        },
+        {
+            "date": "2023/01/14",
+            "time": "11:57",
+            "location": "ชาจ Elex",
+            "batt": "94",
+            "range": "454",
+            "odo": "674",
+            "energy": "standard",
+            "mode": "eco",
+            "used_percent": 6,
+            "used_kw": 3.6288,
+            "used_km": 74,
+            "used_100": 4.9037837837838
+        }

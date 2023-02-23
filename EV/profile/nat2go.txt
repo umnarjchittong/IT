@@ -1,0 +1,2 @@
+{"car_model":"Standard Range","car_id":"4","car_color":"Ski White","car_pic":"byd_atto_3_ski_white.png",
+        "batt_capacity":"49.92","range_nedc":"410","range_wltp":"359","range_eap":"320","car_engine":"150","car_horsep":"201","car_plug_kw":"80","car_plug":"AC Type 2 / DC CCS 2","range_est":"410","batt_using":"330","home_charger_p":"7.20378","home_charger_op":"3.82118"}

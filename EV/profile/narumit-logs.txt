@@ -1,0 +1,14 @@
+{
+            "date": "2023/01/13",
+            "time": "09:26",
+            "location": "Home",
+            "batt": "58",
+            "range": "278",
+            "odo": "939",
+            "energy": "standard",
+            "mode": "eco",
+            "used_percent": -58,
+            "used_kw": -35.0784,
+            "used_km": 939,
+            "used_100": -3.7357188498403
+        }

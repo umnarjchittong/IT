@@ -1,0 +1,9 @@
+[
+    {
+        "name": "โกลเด้น-หนองฉาง",
+        "link": "https://maps.app.goo.gl/e3kaES8XzUb64ztt5",
+        "location":{
+            "place_1":"บ้าน",
+            "place_2":"ปลายทาง"
+        }
+    }]

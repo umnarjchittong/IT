@@ -1,0 +1,1 @@
+[{"date":"14/11/2022", "time":"07:00","batt":"80","km":"387","odo":"153","energy":"standard","mode":"eco"},{"date":"14/11/2022", "time":"07:00","batt":"80","km":"387","odo":"153","energy":"standard","mode":"eco"}]
