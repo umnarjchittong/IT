@@ -1283,4 +1283,32 @@
             "used_kw": 3.6288,
             "used_km": 35,
             "used_100": 10.368
+        },
+        {
+            "date": "2023/03/01",
+            "time": "07:32",
+            "location": "home",
+            "batt": "100",
+            "range": "480",
+            "odo": "10495",
+            "energy": "standard",
+            "mode": "eco",
+            "used_percent": 0,
+            "used_kw": 0,
+            "used_km": 0,
+            "used_100": 0
+        },
+        {
+            "date": "2023/03/01",
+            "time": "08:43",
+            "location": "Work",
+            "batt": "94",
+            "range": "456",
+            "odo": "10529",
+            "energy": "standard",
+            "mode": "eco",
+            "used_percent": 6,
+            "used_kw": 3.6288,
+            "used_km": 34,
+            "used_100": 10.672941176471
         }

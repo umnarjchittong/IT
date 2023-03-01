@@ -3,7 +3,7 @@
                 "password": "231123",
                 "profile": "umnarj",
                 "avatar": "umnarj.png",
-                "language": "en"
+                "language": "th"
             },
             {
             "username": "tokena.a@gmail.com",
@@ -151,4 +151,11 @@
             "profile": "nat2go",
             "avatar": "nat2go.jpg",
             "language": ""
+        },
+            {
+            "username": "Anniiz_9cute@icloud.com",
+            "password": "0966869055",
+            "profile": "Anniiz_9cute",
+            "avatar": "Anniiz_9cute.jpg",
+            "language": "th"
         }]

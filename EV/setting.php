@@ -129,17 +129,17 @@ if (isset($_POST["update"]) && $_POST["update"] == $_SESSION["language"]["settin
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="car_model" id="car_model1" value="Extended Range" <?php if ($_SESSION["car"]["car_model"] == "Extended Range") {
                                                                                                                                                             echo ' checked';
-                                                                                                                                                        } ?>>
+                                                                                                                                                        } ?> onclick="select_ext_range()">
                                                 <label class="form-check-label" for="car_model1">
-                                                    Extended Range (480 KM)
+                                                    Extended Range (NEDC: 480 / WLTP: 420)
                                                 </label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="car_model" id="car_model2" value="Standard Range" <?php if ($_SESSION["car"]["car_model"] == "Standard Range") {
                                                                                                                                                             echo ' checked';
-                                                                                                                                                        } ?>>
+                                                                                                                                                        } ?> onclick="select_std_range()">
                                                 <label class="form-check-label" for="car_model2">
-                                                    Standard Range (410 KM)
+                                                    Standard Range (NEDC: 400 / WLTP: 320)
                                                 </label>
                                             </div>
                                         </div>
@@ -159,6 +159,16 @@ if (isset($_POST["update"]) && $_POST["update"] == $_SESSION["language"]["settin
                                                                                                                                                 echo '330';
                                                                                                                                             } ?>" required>
                                         </div>
+                                        <script>
+                                            function select_ext_range() {
+                                                document.getElementById("range_est").value = 420;
+                                                document.getElementById("batt_using").value = 420;
+                                            }
+                                            function select_std_range() {
+                                                document.getElementById("range_est").value = 320;
+                                                document.getElementById("batt_using").value = 320;
+                                            }
+                                        </script>
                                         <div class="form-group mb-3 mt-5 text-center w-100">
                                             <input type="hidden" name="username" value="umnarj">
                                             <input type="hidden" name="filename" value="umnarj.txt">

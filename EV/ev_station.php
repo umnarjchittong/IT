@@ -57,36 +57,6 @@ if (!isset($_SESSION["member"])) {
                 <!--//app-card-->
 
                 <?php
-                // print_r($car);
-
-                // $charge_type = array("22", "60", "80", "120");
-                // $charge = array(
-                //     "22" => array(
-                //         "min" => 0,
-                //         "kwh" => 0,
-                //         "range" => 0,
-                //         "batt" => 0
-                //     ),
-                //     "60" => array(
-                //         "min" => 0,
-                //         "kwh" => 0,
-                //         "range" => 0,
-                //         "batt" => 0
-                //     ),
-                //     "80" => array(
-                //         "min" => 0,
-                //         "kwh" => 0,
-                //         "range" => 0,
-                //         "batt" => 0
-                //     ),
-                //     "120" => array(
-                //         "min" => 0,
-                //         "kwh" => 0,
-                //         "range" => 0,
-                //         "batt" => 0
-                //     ),
-                // );
-
                 $charge_type = array("7", "22", "60", "80");
                 $charge = array(
                     "7" => array(

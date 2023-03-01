@@ -151,7 +151,7 @@ $language_pack_th = array(
     "ev-station-charging-value" => "ระบุจำนวน",
     "ev-station-btn-min" => "นาที",
     "ev-station-btn-km" => "กม.",
-    "ev-station-btn-kwh" => "kw/h",
+    "ev-station-btn-kwh" => "กิโลวัตต์",
     "ev-station-btn-batt" => "แบต (%)",
     // ev Station
     "ev-station-cal-amp" => "กำลังไฟฟ้า",
@@ -837,7 +837,7 @@ function charge_calculation($charge, $method, $val)
     write_logs($_SESSION["member"]["email"], 'EV Station', $val . ' ' . $method);
 
     // $min = ceil($charge[$type]["min"]) . ' - ' . ceil($charge[$type]["min"] + ($charge[$type]["min"] * ($ev_station_err_min / 100)));
-    if ($method == strtolower($_SESSION["language"]["min"])) {
+    if ($method == strtolower($_SESSION["language"]["ev-station-btn-min"])) {
         // $val = $val - ($val * ($ev_station_err_min / 100));
         $min = $_GET['chargeval'];
         foreach ($charge_type as $type) {
@@ -856,7 +856,7 @@ function charge_calculation($charge, $method, $val)
             $charge[$type]["batt"] = number_format(($charge[$type]["batt"]) - ($charge[$type]["batt"] * (intval($ev_station_err_min) / 100)), 0) . ' - ' . number_format($charge[$type]["batt"], 0);
             $charge[$type]["range"] = floor(($charge[$type]["range"]) - ($charge[$type]["range"] * (intval($ev_station_err_km) / 100))) . ' - ' . floor($charge[$type]["range"]);
         }
-    } else if ($method == strtolower($_SESSION["language"]["kwh"])) {
+    } else if ($method == strtolower($_SESSION["language"]["ev-station-btn-kwh"])) {
         if ($val > $_SESSION["car"]["batt_capacity"]) {
             $val = $_SESSION["car"]["batt_capacity"];
         }
@@ -873,7 +873,7 @@ function charge_calculation($charge, $method, $val)
             $charge[$type]["batt"] = number_format($charge[$type]["batt"], 0) . ' - ' . number_format(($charge[$type]["batt"]) + ($charge[$type]["batt"] * (intval($ev_station_err_batt) / 100)), 0);
             $charge[$type]["range"] = floor(($charge[$type]["range"]) - ($charge[$type]["range"] * (intval($ev_station_err_km) / 100))) . ' - ' . floor($charge[$type]["range"]);
         }
-    } else if ($method == strtolower($_SESSION["language"]["km"])) {
+    } else if ($method == strtolower($_SESSION["language"]["ev-station-btn-km"])) {
         if ($val > $_SESSION["car"]["range_est"]) {
             $val = $_SESSION["car"]["range_est"];
         }
@@ -890,7 +890,7 @@ function charge_calculation($charge, $method, $val)
             $charge[$type]["kwh"] = number_format($charge[$type]["kwh"], 0) . ' - ' . number_format(($charge[$type]["kwh"] + ($charge[$type]["kwh"] * (intval($ev_station_err_kwh) / 100))), 0);
             $charge[$type]["batt"] = number_format($charge[$type]["batt"], 0) . ' - ' . number_format(($charge[$type]["batt"]) + ($charge[$type]["batt"] * (intval($ev_station_err_batt) / 100)), 0);
         }
-    } else if ($method == strtolower($_SESSION["language"]["batt"])) {
+    } else if ($method == strtolower($_SESSION["language"]["ev-station-btn-batt"])) {
         if ($val > 100) {
             $val = 100;
         }
@@ -949,10 +949,10 @@ function ev_station_rate($method = 'min', $val)
                 <tr>
                     <td class="cell text-primary fw-bold">PEA Volta</td>
                     <td class="cell">Bang Jak</td>
-                    <td class="cell text-center"><?= number_format(7.5798, 4) ?></td>
-                    <td class="cell text-center"><?= number_format(4.1972, 4) ?></td>
-                    <td class="cell text-center"><?= number_format(7.5798 * $kwm * $val, 2) ?></td>
-                    <td class="cell text-center text-primary fw-bold"><?= number_format(4.1972 * $kwm * $val, 2) ?></td>
+                    <td class="cell text-center"><?= number_format(6.9, 4) ?></td>
+                    <td class="cell text-center"><?= number_format(4.5, 4) ?></td>
+                    <td class="cell text-center"><?= number_format(6.9 * $kwm * $val, 2) ?></td>
+                    <td class="cell text-center text-primary fw-bold"><?= number_format(4.5 * $kwm * $val, 2) ?></td>
                 </tr>
                 <tr>
                     <td class="cell text-primary fw-bold">EV Station</td>
@@ -965,10 +965,10 @@ function ev_station_rate($method = 'min', $val)
                 <tr>
                     <td class="cell">EA Anywhere</td>
                     <td class="cell">Caltex</td>
-                    <td class="cell text-center"><?= number_format(6.5, 4) ?></td>
-                    <td class="cell text-center"><?= number_format(6.5, 4) ?></td>
-                    <td class="cell text-center"><?= number_format(6.5 * $kwm * $val, 2) ?></td>
-                    <td class="cell text-center"><?= number_format(6.5 * $kwm * $val, 2) ?></td>
+                    <td class="cell text-center"><?= number_format(7.7, 4) ?></td>
+                    <td class="cell text-center"><?= number_format(7.7, 4) ?></td>
+                    <td class="cell text-center"><?= number_format(7.7 * $kwm * $val, 2) ?></td>
+                    <td class="cell text-center"><?= number_format(7.7 * $kwm * $val, 2) ?></td>
                 </tr>
                 <tr>
                     <td class="cell text-primary fw-bold">Evolt</td>

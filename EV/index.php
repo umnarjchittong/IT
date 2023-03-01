@@ -91,9 +91,9 @@ if (!isset($_SESSION["member"])) {
                         <div class="app-card app-card-stat shadow-sm h-100">
                             <div class="app-card-body p-3 p-lg-4">
                                 <h4 class="stats-type mb-1">ระยะทางสูงสุด</h4>
-                                <div class="stats-figure"><?= $_SESSION["car"]["range_nedc"] ?> กม.</div>
+                                <div class="stats-figure">NEDC: <?= $_SESSION["car"]["range_nedc"] ?> กม.</div>
                                 <div class="stats-meta text-success">
-                                    <?= 'Est. ' . $_SESSION["car"]["range_est"] ?>
+                                    <?= 'WLTP: ' . $_SESSION["car"]["range_est"] ?>
                                 </div>
                             </div>
                         </div>
