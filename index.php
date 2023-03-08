@@ -137,6 +137,7 @@ if (isset($_GET['asset']) && $_GET['asset'] != '') {
                 <div class="text-uppercase col-md-5 col col-12">
                     <p class="display-6 mb-3">กำลังทำ</p>
                     <ul class="text-capitalize">
+                        <li><a href="https://faed.mju.ac.th/dev/arch_dashboard" target="_blank">Arch's Dashboard</a></li>
                         <li><a href="https://ics.mju.ac.th/" target="_blank">ระบบการควบคุมภายใน ม.แม่โจ้</a></li>
                         <li><a href="https://faed.mju.ac.th/dev/TOR" target="_blank">ระบบบันทึกภาระงานตาม TOR</a></li>
                         <li><a href="https://faed.mju.ac.th/activitydbms" target="_blank">ฐานข้อมูลข่าวกิจกรรม</a></li>
@@ -151,6 +152,7 @@ if (isset($_GET['asset']) && $_GET['asset'] != '') {
                     <ul class="text-capitalize">
                         <li><a href="https://faed.mju.ac.th/ddm" target="_blank">ระบบสายตรงคณบดี</a></li>
                         <li><a href="https://maejo.link/" target="_blank">ระบบการจัดการย่อลิงก์ และสร้าง QR โค๊ด</a></li>
+                        <!-- <li><a href="https://faed.mju.ac.th/it/dl/chokanan/doc.zip" target="_blank">doc.zip</a></li> -->
                     </ul>
                 </div>
             </div>

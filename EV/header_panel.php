@@ -1,5 +1,6 @@
 <?php
-
+debug_console("MEMBER: " , $_SESSION["member"]);
+debug_console("CAR : " , $_SESSION["car"]);
 ?>
 
 <div class="app-header-inner">

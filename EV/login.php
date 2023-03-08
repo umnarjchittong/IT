@@ -67,10 +67,10 @@ if (isset($_POST["sign_email"]) && isset($_POST["sign-password"])) {
     if (isset($user_profile) && $user_profile != "") {
         echo " found<br>";
         if (isset($_POST["RememberPassword"]) && $_POST["RememberPassword"] == 'remember') {
-            setcookie("byd_email", $_POST["sign_email"], time() + (3600 * 7)); // day * 7
-            setcookie("byd_password", $_POST["sign-password"], time() + (3600 * 7));
+            setcookie("byd_email", $_POST["sign_email"], time() + (86400 * 30), "/"); // day * 30
+            setcookie("byd_password", $_POST["sign-password"], time() + (86400 * 30), "/");
             echo "cookie set<br>";
-            echo $_COOKIE["byd_email"] . " / " . $_COOKIE["byd_password"];
+            // echo $_COOKIE["byd_email"] . " / " . $_COOKIE["byd_password"];
         } else {
             setcookie("byd_email");
             setcookie("byd_password");
@@ -88,7 +88,7 @@ if (isset($_POST["sign_email"]) && isset($_POST["sign-password"])) {
         // print_r($_SESSION["car"]);
         // echo '</pre>';
 
-        write_logs($_POST["sign_email"], 'sign in', 'completed');-
+        write_logs($_POST["sign_email"], 'sign in', 'completed');
 
         // header("location:index.php");
         header("location:trip_recording.php?act=add");

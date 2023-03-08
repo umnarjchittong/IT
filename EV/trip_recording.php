@@ -177,7 +177,7 @@ if (isset($_POST["t_log_batt"]) && isset($_POST["t_log_odo"]) && isset($_POST["u
                                         <label for="t_log_batt"><?= $_SESSION["language"]["road-trip-logs-table-batt"] ?></label>
                                     </div>
                                     <div class="form-floating mb-3 col-4">
-                                        <input type="number" class="form-control text-end" name="t_log_range" id="t_log_range" required step="0.01" tabindex="3">
+                                        <input type="number" class="form-control text-end" name="t_log_range" id="t_log_range" required step="0.01" tabindex="3" onfocus="gen_t_log_range()">
                                         <label for="t_log_range"><?= $_SESSION["language"]["road-trip-logs-table-range"] ?></label>
                                     </div>
                                     <div class="form-floating mb-3 col-4">
@@ -237,6 +237,13 @@ if (isset($_POST["t_log_batt"]) && isset($_POST["t_log_odo"]) && isset($_POST["u
                     <!--//app-card-->
             </div>
             </form>
+            <script>
+                function gen_t_log_range() {
+                    if (document.getElementById("t_log_batt").value == 100) {
+                        document.getElementById("t_log_range").value = <?= $_SESSION["car"]["range_nedc"] ?>;
+                    }
+                }
+            </script>
         </div>
         <?php // } 
         ?>
